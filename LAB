@@ -19,3 +19,33 @@ Complete!
    16  yum update
    17  yum install ansible
    18  history
+==================================================================================================================
+[root@ip-172-31-16-30 ~]# cd /root/scripts/jenkins/demos/
+[root@ip-172-31-16-30 demos]# pwd
+/root/scripts/jenkins/demos
+[root@ip-172-31-16-30 demos]# cd ..
+[root@ip-172-31-16-30 jenkins]# cd /demos
+-bash: cd: /demos: No such file or directory
+[root@ip-172-31-16-30 jenkins]# cd /demos/
+-bash: cd: /demos/: No such file or directory
+[root@ip-172-31-16-30 jenkins]# cd demos
+[root@ip-172-31-16-30 demos]# cd ../..
+[root@ip-172-31-16-30 scripts]# cd .
+[root@ip-172-31-16-30 scripts]# cd jenkins/demos/
+[root@ip-172-31-16-30 demos]# vi config.xml
+[root@ip-172-31-16-30 demos]# cd
+[root@ip-172-31-16-30 ~]# cp /root/scripts/jenkins/demos/config.xml /usr/jenkins/jobs/demos
+cp: cannot create regular file ‘/usr/jenkins/jobs/demos’: No such file or directory
+[root@ip-172-31-16-30 ~]# mkdir -p /usr/jenkins/jobs/demos/
+[root@ip-172-31-16-30 ~]# cp /root/scripts/jenkins/demos/config.xml /usr/jenkins/jobs/demos
+[root@ip-172-31-16-30 ~]# ls -ltr
+total 20
+-rw-------. 1 root root 7020 Jan  3 18:48 original-ks.cfg
+-rw-------. 1 root root 7741 Jan  3 18:48 anaconda-ks.cfg
+-rw-r--r--. 1 root root   11 Apr 17 11:29 epel.repo
+drwxr-xr-x. 3 root root   21 Apr 17 11:47 scripts
+[root@ip-172-31-16-30 ~]# cd /usr/jenkins/jobs/demos/
+[root@ip-172-31-16-30 demos]# ll
+total 4
+-rw-r--r--. 1 root root 4 Apr 17 11:56 config.xml
+[root@ip-172-31-16-30 demos]#
