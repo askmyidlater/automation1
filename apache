@@ -1,0 +1,11 @@
+  87  yum install httpd -y
+   88  netstat -anlp | grep":80"
+   89  netstat - anlp | grep":80"
+   90  netstat -anlp|grep":80"
+   91  netstat -anlp| grep":80"
+   92  netstat -anlp | grep":80"
+   93  exit
+   94  systemctl enable httpd
+   95  netstat -anlp|grep":80"
+   96  netstat -eapl | grep ":80"
+   97  history
