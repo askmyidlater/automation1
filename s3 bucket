@@ -1,0 +1,2 @@
+#creating bucket
+aws s3api create-bucket --bucket askmelater --region ap-south-1 --create-bucket-configuration LocationConstraint=ap-south-1
