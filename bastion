@@ -1,0 +1,26 @@
+[root@bastionserver abc]# ssh -i ssh.pem ec2-user@172.31.24.110
+^C
+[root@bastionserver abc]# history
+    1  hostname
+    2  vi /ete/hostname
+    3  hostname
+    4  vi /etc/hostname
+    5  ifconfig
+    6  vi /etc/hosts
+    7  hostname -F /etc/hostname
+    8  vi /etc/hostname
+    9  vi /etc/hosts
+   10  vi /etc/cloud/cloud.cfg
+   11  vi /etc/hostname
+   12  vi /etc/hosts
+   13  init 6
+   14  logout
+   15  mkdir abc
+   16  vi ssh.pem
+   17  cd abd
+   18  cd abc
+   19  vi ssh.pem
+   20  ssh -i ssh.pem ec2-user@172.31.21.247
+   21  vi ssh.pem
+   22  chmod 400 ssh.pem
+   23  ssh -i ssh.pem ec2-user@172.31.21.247
